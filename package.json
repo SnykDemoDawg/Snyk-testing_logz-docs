@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "The docs for Logz.io",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/logzio/logz-docs.git"
@@ -45,7 +48,9 @@
     "redoc": "^2.0.0-rc.23",
     "smooth-scroll": "^16.1.2",
     "styled-components": "^4.4.1",
-    "tablesorter": "^2.31.2"
+    "tablesorter": "^2.31.2",
+    "@snyk/protect": "latest"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "snyk": true
 }
